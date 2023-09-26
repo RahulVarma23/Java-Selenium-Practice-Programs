@@ -7,9 +7,8 @@ public class SearchPosition {
 		for(int n :a) {
 			if(n>t) {
 				return index;
-			}else if(n==t) {
+			}else if(n==t)
 				return index;
-			}
 			index++;
 		}
 		return index;

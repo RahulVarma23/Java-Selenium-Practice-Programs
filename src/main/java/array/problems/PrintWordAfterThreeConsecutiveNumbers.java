@@ -18,7 +18,7 @@ public class PrintWordAfterThreeConsecutiveNumbers {
 		int k=2;
 		for(int i=0;i<a.length;i++) {			
 			if(j<a.length&& k<a.length && a[j]-a[i]==1 && a[k]-a[j]==1)
-				System.out.println("java");		
+				System.out.print("java"+" ");
 			j++;
 			k++;	
 		}

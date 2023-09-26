@@ -21,7 +21,7 @@ public class MinimumSwaps {
 		int [] a = arr.clone();
 		Arrays.sort(a);
 		
-		HashMap<Integer,Integer> map = new HashMap<Integer,Integer>();
+		HashMap<Integer,Integer> map = new HashMap<>();
 		
 		for(int i =0;i<a.length;i++) {
 			map.put(a[i], i);

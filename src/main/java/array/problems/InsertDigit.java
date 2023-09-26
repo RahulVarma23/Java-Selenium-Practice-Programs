@@ -13,12 +13,12 @@ public class InsertDigit {
 		int n= array.length+count;
 		int [] arr = new int [n];
 		int j=0;
-		for (int i=0;i<array.length;i++) {
-			if (array[i]==5) {
-				arr[j]=array[i];
-				j=j+2;
-			}else {
-				arr[j]=array[i];
+		for (int k : array) {
+			if (k == 5) {
+				arr[j] = k;
+				j = j + 2;
+			} else {
+				arr[j] = k;
 				j++;
 			}
 		}	

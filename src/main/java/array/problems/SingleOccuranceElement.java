@@ -17,9 +17,9 @@ public class SingleOccuranceElement {
 
 	private static void findSingleOccuranceElements(int[] array) {
 		HashMap<Integer,Integer> hm = new LinkedHashMap<Integer,Integer>();
-		
-		for(int i = 0;i<array.length;i++) {			
-			hm.put(array[i], hm.getOrDefault(array[i], 0)+1);
+
+		for (int j : array) {
+			hm.put(j, hm.getOrDefault(j, 0) + 1);
 		}			
 		Set<Integer> keys = hm.keySet();		
 		for(Integer key: keys) {

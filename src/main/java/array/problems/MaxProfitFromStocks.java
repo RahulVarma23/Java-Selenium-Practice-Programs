@@ -2,13 +2,13 @@ package array.problems;
 
 public class MaxProfitFromStocks {
 	
-	public static int maxProfit(int input []) {	
+	public static int maxProfit(int[] input) {	  
 		int maxProfit=0;	
 		int min=input[0];
-		
-		for (int i=0;i<input.length;i++) {
-			min = Math.min(min ,input[i]);		
-			maxProfit=Math.max(maxProfit, input[i]-min);		
+
+		for (int num : input) {
+			min = Math.min(min, num);
+			maxProfit = Math.max(maxProfit, num - min);
 		}		
 		return maxProfit;
 	}

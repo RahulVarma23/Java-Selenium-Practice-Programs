@@ -6,9 +6,9 @@ public class SearchPositionWithBinarySearch {
 		int start =0;
 		int end = input.length-1;
 		int res = -1;
-		if(input.length==0 && input[0]!=target) {
+		if(input.length== 1 && input[0]!=target) {
 			return -1;
-	}
+	   }
 			
 		while(start<=end) {
 			int mid = (start + end)/2;

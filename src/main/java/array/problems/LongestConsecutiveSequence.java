@@ -12,7 +12,7 @@ public class LongestConsecutiveSequence {
 
     private static int lengthOfLongestConsecutiveElementSequence(int [] nums) {
        int maxStreak=0;
-       Set<Integer> set = new HashSet<Integer>();
+       Set<Integer> set = new HashSet<>();
 
        for(int num : nums){
            set.add(num);

@@ -26,7 +26,7 @@ public class WebTableHandling {
 
 			if (!map.containsKey(continents.get(i))) {
 				int sum = elements1.stream().map(ele -> ele.getText().replace(",", ""))
-						.mapToInt(string -> Integer.parseInt(string)).sum();
+						.mapToInt(Integer::parseInt).sum();
 				map.put(continents.get(i), sum);
 			}
 		}

@@ -21,7 +21,7 @@ public class MaxProductSubArray {
 			maxProduct=Math.max(maxProduct, currentProduct);
 			if(currentProduct==0)
 				currentProduct=1;
-		}	
+		}
 		System.out.println(maxProduct);
 	}
 }
