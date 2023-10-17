@@ -1,4 +1,4 @@
-package string.problems;
+package stack;
 
 /* Question 22: Write a java program to remove closest non-star character to its left, as well as remove star itself.
 Return the string after all stars have been removed.
