@@ -7,10 +7,10 @@ public class MeetMe {
 		List<String> words = List.of("meet","meet-me","implement","mango");
 		int count=0;	
 		for (String word: words) {	
-			if(word.indexOf("me")==-1) {
+			if(!word.contains("me")) {
 				System.out.print(word+",");
 			}
-			while(word.indexOf("me") !=-1) {
+			while(word.contains("me")) {
 				word=word.replaceFirst("me", "");
 				count++;
 			}			

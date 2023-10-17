@@ -3,10 +3,7 @@ package exceptionhandling;
 public class Account {
 
 	private static int balance = 100 ;
-	
-	public int balance() {
-		return balance;
-	}
+
 	
 	public static void withdraw(int amount ) throws SufficientFundsNotAvailableException {		
 		if(amount>balance || (balance ==0)) {
