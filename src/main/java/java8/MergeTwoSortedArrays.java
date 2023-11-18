@@ -16,7 +16,7 @@ public class MergeTwoSortedArrays {
         Arrays.stream(arr1).forEach(n->hm.put(n, true));
         Arrays.stream(arr2).forEach(n->hm.put(n, true));
         
-        hm.keySet().stream().forEach(System.out::println);
+        hm.keySet().forEach(System.out::println);
         
 //        for(Map.Entry<Integer, Boolean> map : hm.entrySet()) {
 //        	System.out.println(map.getKey());

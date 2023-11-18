@@ -11,7 +11,7 @@ public class PrintPrimeNumberInDescendingOrder {
 	}
 	
 	public static List<Integer> printPrimeNumbers(int limit){
-		List <Integer> list = Stream.iterate(2, n->n+1).filter(PrintPrimeNumberInDescendingOrder::checkPrime).limit(50).collect(Collectors.toList());
+		List <Integer> list = Stream.iterate(2, n->n+1).limit(50).filter(PrintPrimeNumberInDescendingOrder::checkPrime).collect(Collectors.toList());
 		Collections.reverse(list);
 		return list;
 	}

@@ -11,7 +11,7 @@ public class MethodReferenceDemo {
 		 
 		 
 		 //get uppercase name list using lambda expression
-		 List<String> listUsingLambda = names.stream().map(name-> name.toUpperCase()).collect(Collectors.toList());
+		 List<String> listUsingLambda = names.stream().map(String::toLowerCase).collect(Collectors.toList());
 		 
 		 //get uppercase name list using method reference
 		 List<String> listUsingMethodRef = names.stream().map(String::toUpperCase).collect(Collectors.toList());
