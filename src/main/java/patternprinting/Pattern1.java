@@ -1,4 +1,4 @@
-package pattern.problems;
+package patternprinting;
 
 public class Pattern1 {
 	
