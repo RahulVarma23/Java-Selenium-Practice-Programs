@@ -2,6 +2,7 @@
 .project
 .settings/
 .idea/
+Java_Selenium_Practice.iml
 
 screenshot/
 target/
