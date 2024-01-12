@@ -10,7 +10,7 @@ public class LongestPrefix {
 	private static String findLongestPrefix(String[] str) {
 		String ans = str[0];		
 		for (int i=0;i<str.length;i++) {
-			while(str[i].indexOf(ans)!=0) {
+			while(!str[i].startsWith(ans)) {
 				ans= ans.substring(0, ans.length()-1);
 			}			
 		}

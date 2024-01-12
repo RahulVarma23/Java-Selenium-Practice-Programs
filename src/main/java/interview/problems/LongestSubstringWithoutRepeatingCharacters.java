@@ -13,7 +13,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
 		int right =0;
 		int left = 0;
 		
-		HashSet<Character> set = new HashSet<Character>();
+		HashSet<Character> set = new HashSet();
 		
 		while(right<input.length()){
 			char rightChar = input.charAt(right);
