@@ -22,7 +22,7 @@ public class Anagrams2 {
 		}
 		
 		for( int a : arr)
-			if(a>0 || a<0)
+			if(a != 0)
 				return false;	
 		return true;	
 	}
