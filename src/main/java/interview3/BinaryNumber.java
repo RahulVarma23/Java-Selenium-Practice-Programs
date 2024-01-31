@@ -6,7 +6,17 @@ public class BinaryNumber {
 
     public static void main(String[] args) {
         int a = 11010110;
-        System.out.println(isBinary(a));
+        System.out.println(isBinary2(a));
+    }
+
+    public static boolean isBinary2(int num) {
+        String s = String.valueOf(num);
+        for(char c:  s.toCharArray()){
+
+            if(c !='0' && c != '1')
+                return false;
+        }
+        return true;
     }
 
     public static boolean isBinary(int num) {
