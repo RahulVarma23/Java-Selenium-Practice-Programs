@@ -7,6 +7,12 @@ public class RotateArray {
 	public static void main(String[] args) {	
 		int [] a = {1,2,3,4,5,6};
 		rotate(a, 2);
+
+		//6 5 4 3 2 1
+
+		//5 6 4 3 2 1
+
+		//5 6 1 2 3 4
 	}
 	
 	public static void rotate(int arr [] , int k) {

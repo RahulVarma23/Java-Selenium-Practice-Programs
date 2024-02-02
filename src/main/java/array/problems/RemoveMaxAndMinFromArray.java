@@ -15,8 +15,7 @@ public class RemoveMaxAndMinFromArray {
 
 		System.out.println(Arrays.toString(ans));
 
-		int sum = Arrays.stream(arr).sum();
-		double avg = sum/arr.length;
+		double avg = Arrays.stream(arr).average().getAsDouble();
 		System.out.println(avg);
 	}
 }
