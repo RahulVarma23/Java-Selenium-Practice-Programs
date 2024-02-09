@@ -12,7 +12,6 @@ public class ProductArrayExceptSelf {
 
         System.out.println("\nProduct Array Except Self:");
         printArray(result);
-
     }
 
     private static int[] getProductArrayExceptSelf(int[] arr) {
