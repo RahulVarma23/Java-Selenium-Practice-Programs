@@ -47,7 +47,7 @@ public class TransformDataUtil {
 
 	public static String capitalizeFirstLetter(String input) {
 		return Arrays.stream(input.split(" ")).map(
-				x -> x.replaceFirst("^[a-z]", x.substring(0, 1).toUpperCase())).toList().stream().reduce("",
+				x -> x.replaceFirst("^[a-z]", x.substring(0, 1).toUpperCase())).collect(Collectors.toList()).stream().reduce("",
 				(firstElement, secondElement) -> firstElement + " " + secondElement).trim();
 	}
 
