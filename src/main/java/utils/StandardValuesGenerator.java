@@ -37,8 +37,8 @@ public class StandardValuesGenerator {
 		return textToInclude.toLowerCase() + (new Date()).getTime() + "@" + domain + ".com";
 	}
 
-	public static String generateNewMckessonEmailAddress() {
-		return generateStringValueText(5) + (new Date()).getTime() + "@mckesson.com";
+	public static String generateNewEmailAddress() {
+		return generateStringValueText(5) + (new Date()).getTime() + "@gmail.com";
 	}
 
 	public static void getCombinations(List<List<String>> lists, int row, String[] comb, List<List<String>> result) {
