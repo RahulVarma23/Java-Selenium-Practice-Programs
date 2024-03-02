@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Collection {
 	public static void main(String[] args) throws InterruptedException {
@@ -15,7 +14,6 @@ public class Collection {
     Date date = new Date(); 
     String desiredDate = formatter.format(date).toString().toUpperCase();
 	
-	WebDriverManager.chromedriver().setup();
 	WebDriver driver = new ChromeDriver();
 	
 	driver.manage().window().maximize();

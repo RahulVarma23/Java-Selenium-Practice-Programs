@@ -1,28 +1,26 @@
 package collections;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 
 public class Test {
 
-	public static void main(String[] args) {	
-		String s = "aabbbcccc";
-		
-		//o/p: a2b3c4 , 2a3b4c
-		
-		Map<Character,Integer> hm = new HashMap<Character,Integer>();
-	
-		
-		for(char c: s.toCharArray()) {	
-			hm.put(c,hm.getOrDefault(c, 0)+1);	
+	public static boolean isPolindrome(String str) {
+		String s = str.toLowerCase().replaceAll("[^a-z]","");
+		System.out.println(s);
+		int start =0;
+		int end = s.length()-1;
+		while(start<end) {
+			if(s.charAt(start++) != s.charAt(end--))
+				return false;
 		}
-		
-		Set<Character> set = hm.keySet();
-		
-		for(char c : set) {
-			System.out.print(hm.get(c)+""+c);
-		}
+		return true;
+	}
+
+	public static void main(String[] args) {
+
+		String s = "A man, a plan, a canal: Panama.";
+		System.out.println(isPolindrome(s));
+
 	}
 }

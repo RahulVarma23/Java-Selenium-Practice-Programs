@@ -13,14 +13,12 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.internal.TestResult;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class SortingWebTablesWithStreams {
 	
 	WebDriver driver;
 	@Test
 	public void testSomeMethod() throws IOException {
-		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.get("https://www.amazon.com");
 	}

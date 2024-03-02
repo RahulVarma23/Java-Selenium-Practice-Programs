@@ -8,7 +8,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class HandleTootTip {
 	
@@ -17,7 +16,6 @@ public class HandleTootTip {
 		
 		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Jitesh_kumaradesara\\workspace\\Assessment1\\chromedriver.exe");
 		
-		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		
 		try {

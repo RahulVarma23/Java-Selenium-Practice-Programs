@@ -8,13 +8,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class WebTableHandling {
 
 	public static void findTotalCasesPerContinent() {
 		Map<String, Integer> map = new HashMap<String, Integer>();
-		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("file:///C:/Users/Rahul_Varma/Desktop/website.html");
 		List<WebElement> elements = driver.findElements(By.xpath("//table//tbody/tr/td[5]"));
@@ -36,7 +34,6 @@ public class WebTableHandling {
 	
 	public static void findTotalCountriesPerContinent() {
 		Map<String, Integer> map = new HashMap<String, Integer>();
-		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("file:///C:/Users/Rahul_Varma/Desktop/website.html");
 		List<WebElement> elements = driver.findElements(By.xpath("//table//tbody/tr/td[5]"));

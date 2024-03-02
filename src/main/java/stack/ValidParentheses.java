@@ -2,7 +2,7 @@ package stack;
 
 import java.util.Stack;
 
-public class ValidParantheses {
+public class ValidParentheses {
 	
 	public static boolean isValid(String s) {
 		Stack <Character> stack = new Stack() ;
