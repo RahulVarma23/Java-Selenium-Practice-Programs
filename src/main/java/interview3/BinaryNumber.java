@@ -30,7 +30,6 @@ public class BinaryNumber {
     }
 
     public static boolean isBinaryNum(int num) {
-
        String numberString  =  Integer.toString(num);
 
        int [] array;

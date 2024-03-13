@@ -1,8 +1,6 @@
 package array.problems;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class ThreeSum {
 
@@ -11,8 +9,8 @@ public class ThreeSum {
         System.out.println(threeSum(nums));
     }
 
-    public static List<List<Integer>> threeSum(int [] nums) {
-        List<List<Integer>> ans = new ArrayList<>();
+    public static Set<List<Integer>> threeSum(int [] nums) {
+        Set<List<Integer>> ans = new HashSet<>();
         Arrays.sort(nums);
         int n = nums.length;
 
@@ -31,9 +29,6 @@ public class ThreeSum {
                     r--;
                 }
             }
-
-            while(i+1<n && nums[i]==nums[i+1])
-                i++;
         }
         return ans;
     }

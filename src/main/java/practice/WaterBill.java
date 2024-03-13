@@ -15,11 +15,9 @@ public class WaterBill {
 		if(gallonsUsage<=includeGallons) {
 			return minimumCharge;
 		}else {
-			double extraGallonsUsed = gallonsUsage-includeGallons;
-			double extraAmount = Math.ceil(extraGallonsUsed/numberOfGallonsInCCF)*3.90;
-			return minimumCharge+extraAmount;
+			double extraGallonsUsed = gallonsUsage - includeGallons;
+			double extraAmount = Math.ceil(extraGallonsUsed / numberOfGallonsInCCF) * 3.90;
+			return minimumCharge + extraAmount;
 		}
-		
 	}
-
 }

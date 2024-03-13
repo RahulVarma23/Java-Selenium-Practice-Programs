@@ -51,8 +51,5 @@ public class FetchOtpTest {
         System.out.println(otp);
 
         driver.findElement(By.id("signup_otp1")).sendKeys(otp);
-
-
-
     }
 }

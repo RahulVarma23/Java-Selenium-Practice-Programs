@@ -13,7 +13,7 @@ public class ConcatenateChars {
 		
 		List<Character> list = List.of(ch);
 		
-		String ans = list.stream().map(c->c.toString()).collect(Collectors.joining()).toString();
+		String ans = list.stream().map(Object::toString).collect(Collectors.joining());
 		
 		System.out.println(ans);
 	}
