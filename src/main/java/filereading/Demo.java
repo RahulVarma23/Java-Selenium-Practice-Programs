@@ -1,8 +1,6 @@
 package filereading;
 
 import java.io.*;
-import java.util.*;
-import java.util.stream.*;
 
 
 public class Demo {

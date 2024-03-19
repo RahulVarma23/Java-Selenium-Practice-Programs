@@ -1,4 +1,4 @@
-package interview3;
+package linkedlist;
 
 import java.util.LinkedList;
 import java.util.List;
