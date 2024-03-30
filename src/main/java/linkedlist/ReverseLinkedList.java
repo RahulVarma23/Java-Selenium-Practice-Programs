@@ -1,18 +1,48 @@
 package linkedlist;
 
-import java.util.LinkedList;
+class ReverseLinkedList {
 
-public class ReverseLinkedList {
+     int data;
+     ReverseLinkedList next;
 
-	public static void main(String[] args) {
-		LinkedList<Integer> l1 = new LinkedList<Integer>();
-		l1.add(100);
-		l1.add(200);
-		l1.add(300);
-		
-		LinkedList<Integer> l2 = new LinkedList<Integer>();
-		l1.descendingIterator().forEachRemaining(l2::add);
-		
-		System.out.println(l2);
-	}
-}
+     public ReverseLinkedList(int data) {
+         this.data =data;
+     }
+
+     public static ReverseLinkedList reverse(ReverseLinkedList head) {
+         if(head == null || head.next == null) {
+             return head;
+         }
+
+         ReverseLinkedList prev = null;
+         ReverseLinkedList current = head;
+         ReverseLinkedList temp;
+
+         while(current !=null) {
+             temp= current.next;
+            current.next=prev;
+            prev=current;
+            current=temp;
+         }
+         return prev;
+     }
+
+     public static void main(String[] args) {
+         ReverseLinkedList head1 = new ReverseLinkedList(1);
+         head1.next = new ReverseLinkedList(2);
+         head1.next.next = new ReverseLinkedList(3);
+
+         printList(head1);
+
+         ReverseLinkedList ans = reverse(head1);
+         printList(ans);
+     }
+
+     private static void printList(ReverseLinkedList head) {
+         while (head != null) {
+             System.out.print(head.data + "->");
+             head = head.next;
+         }
+         System.out.println("null");
+     }
+ }
