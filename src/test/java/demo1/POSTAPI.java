@@ -1,20 +1,11 @@
 package demo1;
 
 import org.json.simple.JSONObject;
-
-import org.testng.Assert;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
-
 import  io.restassured.*;
-import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class POSTAPI {
-	
-	
-	
+
 public static void main(String[] args) {
 	JSONObject params = new JSONObject();
 	params.put("name", "morpheus");

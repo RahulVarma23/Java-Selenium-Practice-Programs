@@ -19,7 +19,9 @@ public class BrokenLinks {
 
 	@Test
 	public void findBrokenLinks() throws MalformedURLException {
-		WebDriver driver = getWebDriver();
+		//WebDriver driver = getWebDriver();
+
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.com");
 		List<WebElement> linklist = driver.findElements(By.tagName("a"));

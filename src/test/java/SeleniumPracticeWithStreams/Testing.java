@@ -35,9 +35,7 @@ public class Testing {
 
 		// Save the screenshot to a file
 		// For example:
-		 FileUtils.copyFile(screenshot, new File("element_screenshot.png"));
-
+		FileUtils.copyFile(screenshot, new File("element_screenshot.png"));
 		driver.quit();
 	}
-
 }

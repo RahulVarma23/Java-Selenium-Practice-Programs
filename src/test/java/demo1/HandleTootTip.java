@@ -1,5 +1,6 @@
 package demo1;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -22,8 +23,6 @@ public class HandleTootTip {
 			driver.get("https://demoqa.com/tool-tips"); 
 			driver.manage().window().maximize();
 			testWidget(driver);
-			
-			
 		} catch (Exception ex) {
 			System.out.println("Exception occured: " + ex.getMessage());
 		} finally {
@@ -32,18 +31,16 @@ public class HandleTootTip {
 	}
 
 	private static void testWidget(WebDriver driver) throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		WebElement hoverMeButton = driver.findElement(By.id("toolTipButton"));
 		WebElement hoverMeTextBox = driver.findElement(By.id("toolTipTextField"));
-		
-		
+
 		Actions action = new Actions(driver);
 		
 		Thread.sleep(2000);
 		action.moveToElement(hoverMeButton).perform();
 		String inputText = hoverMeButton.getAttribute("title");
-		
-		
+
 		//Thread.sleep(2000);
 //		WebElement toolTip = driver.findElement(By.className("tooltip-inner"));
 //		String inputText=toolTip.getText();

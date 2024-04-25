@@ -1,6 +1,6 @@
 package interview.problems;
 
-public class AtmPinValidation {
+public class  AtmPinValidation {
 
 	public static void main(String[] args) {
 		String str = "9543";
