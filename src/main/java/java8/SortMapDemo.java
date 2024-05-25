@@ -12,9 +12,9 @@ public class SortMapDemo {
 	public static void main(String[] args) {
 		Map <Integer, String > map = new HashMap<Integer, String>();
 		map.put(6, "a");
-		map.put(2, "b");	
+		map.put(2, "e");
 		map.put(3, "c");
-		map.put(4, "d");
+		map.put(4, "b");
 		
 		List<Entry<Integer, String>> entries = new ArrayList<>(map.entrySet());
 		Collections.sort(entries,(o1,o2)-> o1.getKey()-o2.getKey());

@@ -7,10 +7,6 @@ public class Anagrams2 {
 	}
 
 	private static boolean areAnagrams(String str1, String str2) {
-		
-		if(str1.length() != str2.length()) 
-			return false;
-		
 		int [] arr = new int [127];
 		
 		for (int i=0;i<str1.length();i++) {
