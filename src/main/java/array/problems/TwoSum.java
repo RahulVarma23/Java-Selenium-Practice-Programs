@@ -1,7 +1,7 @@
+
 package array.problems;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class TwoSum {
 
@@ -10,16 +10,16 @@ public class TwoSum {
            twoSum(nums, 9);
 	}
 	
-	public static void twoSum(int [] nums, int target) {	
+	public static void twoSum(int [] nums, int target) {
 		Map<Integer, Integer> map;
 		map = new HashMap<Integer, Integer>();
-		for(int i=0;i<nums.length;i++) {
+
+		for (int i = 0; i < nums.length; i++) {
 			int complement = target - nums[i];
-			if(map.containsKey(complement)) {
-				System.out.println("["+map.get(complement)+","+i+"]");
+			if (map.containsKey(complement)) {
+				System.out.println("[" + map.get(complement) + "," + i + "]");
 			}
-			map.put(nums[i], i);	
+			map.put(nums[i], i);
 		}
 	}
-
 }

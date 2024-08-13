@@ -8,10 +8,9 @@ public class Test {
 	}
 
 	private static boolean checkZero(String s) {
-		int l=Character.getNumericValue(s.charAt(0));
 		for (int i = 1; i < s.length(); i++) {
 			int k= Character.getNumericValue(s.charAt(i)) ;
-			if ((l == 0 && k==0) || (k==0) ) {
+			if ((k == 0)) {
 				return true;
 			}	
 		}

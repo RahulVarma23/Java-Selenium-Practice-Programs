@@ -12,24 +12,22 @@ public class NumberOfPolindromes {
 		for(int i =0;i<s.length();i++) {
 			int j = i+1;
 			while(j<=s.length()) {
-				if(isPolindrome(s.substring(i,j))){
+				if(isPolindrome(s.substring(i,j))) {
 					count++;
-					j++;
-				}else {
-					j++;
 				}
+					j++;
 			}		
 		}	
 		return count;
 	}
 	
 	public static boolean isPolindrome(String s) {
-		int start =0;
-		int end = s.length()-1;
-		while(start<end) {
-			if(s.charAt(start++) != s.charAt(end--))
+		int start = 0;
+		int end = s.length() - 1;
+		while (start < end) {
+			if (s.charAt(start++) != s.charAt(end--))
 				return false;
-		}	
+		}
 		return true;
 	}
 }
