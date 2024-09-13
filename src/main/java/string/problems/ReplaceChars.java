@@ -18,8 +18,5 @@ public class ReplaceChars {
         }
 
         System.out.println(result);
-
-
-
     }
 }
