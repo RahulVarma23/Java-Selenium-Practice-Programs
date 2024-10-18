@@ -20,6 +20,5 @@ public class MatrixTranspose {
         for(int [] arr :transpose ) {
             System.out.println(Arrays.toString(arr));
         }
-
     }
 }

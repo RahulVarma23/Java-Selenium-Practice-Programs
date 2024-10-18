@@ -38,7 +38,8 @@ public class SortingObjectOfUserDefined {
 //		list.stream()
 //				.sorted((I1, I2) -> I1.getFirstName().compareTo(I2.getFirstName())).forEach(System.out::println);
 
-		Collections.sort(list,(d1,d2) -> d1.lastName.compareTo(d2.lastName));
+		
+		list.sort((d1, d2) -> d1.lastName.compareTo(d2.lastName));
 		System.out.println(list);
 
 		System.out.println("==============================");
