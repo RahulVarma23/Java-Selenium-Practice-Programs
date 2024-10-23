@@ -1,4 +1,5 @@
 package BinarySearch;
+
 public class BinarySearch {
 	
 	public static int binarySearchRec(int [] array ,int target ,int left ,int right) {	
