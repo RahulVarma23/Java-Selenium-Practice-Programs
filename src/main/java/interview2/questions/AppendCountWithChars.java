@@ -16,13 +16,13 @@ public class AppendCountWithChars {
 				count++;
 			}
 			else {
-				if(prevChar!=0) {
+				if (prevChar != 0) {
 					sb.append(count).append(prevChar);
 				}
-				prevChar =c;
-				count =1;
-			    }					
-		    }		
+				prevChar = c;
+				count = 1;
+			}
+		}
 		sb.append(count).append(prevChar);	
 		return sb.toString();
 	}

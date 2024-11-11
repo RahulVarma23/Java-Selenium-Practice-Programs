@@ -14,7 +14,6 @@ public class SecondMostFrequentChar {
             array[index] = array[index]+1;
         }
         int max=0 ,secondMax =0;
-
         for (int j=0;j<array.length;j++){
             if(array[j] > max) {
                 max = array[j];

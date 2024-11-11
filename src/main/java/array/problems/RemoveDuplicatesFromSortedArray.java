@@ -1,5 +1,6 @@
 package array.problems;
 
+import java.sql.SQLOutput;
 import java.util.HashSet;
 
 public class RemoveDuplicatesFromSortedArray {

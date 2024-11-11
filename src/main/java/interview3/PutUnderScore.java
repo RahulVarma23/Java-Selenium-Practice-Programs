@@ -7,12 +7,13 @@ public class PutUnderScore {
 		 
 		 StringBuffer sb = new StringBuffer();
 		 
-		 for (int i=0;i<str.length();i++) {		 
-			 if(Character.isUpperCase(str.charAt(i))) {
-				 sb.append(str.charAt(i)).append("_");
+		 for (int i=0;i<str.length();i++) {
+			 char ch = str.charAt(i);
+			 if(Character.isUpperCase(ch)) {
+				 sb.append(ch).append("_");
 				 
 			 }else {
-				 sb.append(str.charAt(i));
+				 sb.append(ch);
 			 }	 
 		 } 
 		 System.out.println(sb);

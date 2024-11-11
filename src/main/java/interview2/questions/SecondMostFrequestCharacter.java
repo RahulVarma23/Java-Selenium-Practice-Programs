@@ -11,7 +11,7 @@ public class SecondMostFrequestCharacter {
 	
 	public static char findSecondMax(String s) {
 		int max = 0 ; int secondMax = 0;
-		char maxRepeated = Character.MAX_VALUE, secondMaxRepeated = Character.MIN_VALUE;
+		char secondMaxRepeated = Character.MIN_VALUE;
 		
 		HashMap<Character,Integer> map = new HashMap<Character,Integer>();
 	
@@ -25,7 +25,6 @@ public class SecondMostFrequestCharacter {
 			
 			if(map.get(c)>max) {
 				max = map.get(c);
-				maxRepeated = c;
 			}else if(map.get(c)>secondMax && map.get(c)<max) {
 				secondMax = map.get(c);
 				secondMaxRepeated = c;

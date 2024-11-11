@@ -6,7 +6,7 @@ import java.util.Map;
 public class CanFormPolindrome {
 
     public static void main(String[] args) {
-        boolean f =canFormPolindrome("abccab");
+        boolean f =canFormPolindrome("computer");
         System.out.println(f);
     }
 
