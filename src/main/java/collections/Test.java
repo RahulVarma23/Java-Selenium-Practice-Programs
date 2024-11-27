@@ -5,22 +5,30 @@ import java.util.*;
 
 public class Test {
 
-	public static boolean isPolindrome(String str) {
-		String s = str.toLowerCase().replaceAll("[^a-z]","");
-		System.out.println(s);
-		int start =0;
-		int end = s.length()-1;
-		while(start<end) {
-			if(s.charAt(start++) != s.charAt(end--))
-				return false;
-		}
-		return true;
-	}
+
 
 	public static void main(String[] args) {
 
-		String s = "A man, a plan, a canal: Panama.";
-		System.out.println(isPolindrome(s));
+		List<Integer> list = Arrays.asList(2,5,1,3,9,10);
+
+		//normal for loop
+//		for(int i=0;i<list.size();i++) {
+//			System.out.println(list.get(i));
+//		}
+
+		//advanced for loop
+
+//		for(int i : list) {
+//			System.out.println(i);
+//		}
+//
+		//iterator
+
+		Iterator<Integer> itr = list.iterator();
+
+		while(itr.hasNext()) {
+			System.out.print(itr.next()+" ");
+		}
 
 	}
 }

@@ -30,11 +30,11 @@ public class Pangram {
             for(char ch : chars) {
                 arr[ch-'a']++;
             }
+        }
 
-            for(int a : arr) {
-                if(a==0) {
-                    return false;
-                }
+        for(int a : arr) {
+            if(a==0) {
+                return false;
             }
         }
         return true;

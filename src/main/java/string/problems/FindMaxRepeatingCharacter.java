@@ -61,8 +61,5 @@ public class FindMaxRepeatingCharacter {
 		System.out.println("max occuring character: "+ findMaxRepeating("technoeecreditstwert"));
 		
 		//System.out.println(findMaxRepeating1("technoeecreditstwert"));
-		
-		
 	}
-
 }

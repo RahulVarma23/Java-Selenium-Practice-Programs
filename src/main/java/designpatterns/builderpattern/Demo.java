@@ -3,11 +3,9 @@ package designpatterns.builderpattern;
 public class Demo {
 
     public static void main(String[] args) {
-
         URL.URLBuilder builder = new URL.URLBuilder();
         builder.protocol("https://").hostname("www.google.com:").port("443")
-                .pathParam("/1").queryParam("?name=xyz")
-        ;
+                .pathParam("/1").queryParam("?name=xyz");
 
         URL url = builder.build();
 

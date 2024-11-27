@@ -8,7 +8,6 @@ public class FirstRepeatingCharIndex {
     }
 
     private static int findIndexOfFirstRepeatingChar(String str) {
-
         for(char ch: str.toCharArray()) {
             if(str.indexOf(ch)==str.lastIndexOf(ch)){
                 return str.indexOf(ch);
@@ -18,7 +17,6 @@ public class FirstRepeatingCharIndex {
     }
 
     private static int findIndexOfFirstRepeatingChar1(String str) {
-
         int [] arr = new int[26];
         for(char ch: str.toCharArray()) {
             arr[ch-'a']++;

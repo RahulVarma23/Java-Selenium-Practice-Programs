@@ -3,6 +3,7 @@ package builderpatternwithpom;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+
 public class RegistrationPage {
     WebDriver driver;
 
@@ -18,7 +19,6 @@ public class RegistrationPage {
     }
 
     public void userRegistration(Registration registration) {
-
         driver.findElement(firstName).sendKeys(registration.firstName);
         driver.findElement(lastName).sendKeys(registration.lastName);
         driver.findElement(email).sendKeys(registration.email);

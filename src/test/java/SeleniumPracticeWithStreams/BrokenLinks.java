@@ -21,19 +21,21 @@ public class BrokenLinks {
 	public void findBrokenLinks() throws MalformedURLException {
 		//WebDriver driver = getWebDriver();
 
-		WebDriver driver = new ChromeDriver();
+
+		ChromeOptions browserOptions = new ChromeOptions();
+		browserOptions.addArguments("--headless");
+		WebDriver driver = new ChromeDriver(browserOptions);
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.com");
 		List<WebElement> linklist = driver.findElements(By.tagName("a"));
 
 		System.out.println("No of links: "+linklist.size());
 
-//		List <String > list = new ArrayList<String>();
-//
+
+
 //		for (WebElement e : linklist) {
 //			String url = e.getAttribute("href");
-//			list.add(url);
-//			//checkBrokenLink(url);
+//			checkBrokenLink(url);
 //		}
 
 		List <String > list = linklist.stream().map(ele->ele.getAttribute("href")).collect(Collectors.toList());

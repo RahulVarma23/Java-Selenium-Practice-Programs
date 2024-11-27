@@ -48,8 +48,4 @@ class Solution {
 
         rightViewTree(root);
     }
-
-
-
-
 }

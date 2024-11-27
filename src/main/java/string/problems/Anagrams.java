@@ -9,7 +9,7 @@ public class Anagrams {
 	}
 
 	private static boolean areAnagrams(String str1, String str2) {
-		if(str1 == null || str1.isEmpty()==true || str2==null || str2.isEmpty()==true) {
+		if(str1 == null || str1.isEmpty() || str2==null || str2.isEmpty()) {
 			return false;
 		}
 		

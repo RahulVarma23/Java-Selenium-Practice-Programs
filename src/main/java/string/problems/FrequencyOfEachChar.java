@@ -20,5 +20,4 @@ public class FrequencyOfEachChar {
 		}	
 		System.out.println(hm);
 	}
-
 }

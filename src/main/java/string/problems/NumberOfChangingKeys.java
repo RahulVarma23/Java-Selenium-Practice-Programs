@@ -15,7 +15,6 @@ public class NumberOfChangingKeys {
             }
             lastKey=currentKey;
         }
-
         System.out.println(count);
     }
 }

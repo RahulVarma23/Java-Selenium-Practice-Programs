@@ -12,7 +12,7 @@ public class ReverseWord {
 	
 	public static String findReverseOfWords(String s) {
 		if (s==null || s.isEmpty())
-			return null;
+			return "";
 		
 		String word ="";
 		String ans="";

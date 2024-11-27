@@ -4,7 +4,6 @@ public class CalculateVowels {
 
 	public static void main(String[] args) {
 		System.out.println(CalculateVowels("rahulvarma"));;
-
 	}
 
 	private static int CalculateVowels(String string) {

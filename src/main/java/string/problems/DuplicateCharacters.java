@@ -16,10 +16,10 @@ public class DuplicateCharacters {
 			return null;
 		}
 		char[] ch = str.toCharArray();
-		HashSet<Character> hs = new HashSet<Character>();
+		HashSet<Character> hs = new HashSet<>();
 		String output = "";
 		for (char c : ch) {
-			if (hs.add(c) == false) {
+			if (!hs.add(c)) {
 				output = c+output;
 			}
 		}
