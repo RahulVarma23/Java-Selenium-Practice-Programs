@@ -3,7 +3,8 @@ package string.problems;
 import java.util.HashSet;
 import java.util.Set;
 
-public class PolindromicSubstring {
+//Generate all polindromic substring and length of longest polindromic substring
+public class GeneratePolindromicSubstring {
 
     static int maxLength =0;
 
