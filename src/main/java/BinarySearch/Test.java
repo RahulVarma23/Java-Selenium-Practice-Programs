@@ -3,30 +3,28 @@ package BinarySearch;
 public class Test {
 
     public static void main(String[] args) {
-        int nums [] = {1,2,3,3,3,3};
-        System.out.println(searchElement(nums, 3, false));
+        int nums[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        System.out.println(findPosition(nums, 5));
     }
 
-    private static int searchElement(int[] nums, int target , boolean firstIndex) {
-        int left =0;
-        int right = nums.length-1;
-        int res = -1;
+    private static int findPosition(int[] nums, int target) {
+        int start = 0;
+        int end = nums.length - 1;
 
-        while(left<=right){
-            int mid = (left+right)/2;
-            if(target<nums[mid]){
-                right = mid-1;
-            }else if(target>nums[mid]){
-                left =mid+1;
-            }else{
-                res = mid;
-                if(firstIndex) {
-                    right = mid - 1;
-                }else{
-                    left = mid+1;
-                }
+        if(nums.length==1 && nums[0]!=target) {
+            return -1;
+        }
+
+        while (start <= end) {
+            int mid = (start + end) / 2;
+            if (target < nums[mid]) {
+                end = mid - 1;
+            } else if (target > nums[mid]) {
+                start = mid + 1;
+            } else {
+                return mid;
             }
         }
-        return res;
+        return -1;
     }
 }

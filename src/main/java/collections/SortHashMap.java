@@ -20,7 +20,11 @@ public class SortHashMap {
 		}
 		
 		System.out.println();
-		System.out.println("---After sorting---");
+		System.out.println("---sorting based on value---");
+
 		hm.entrySet().stream().sorted(Entry.comparingByValue()).forEach(System.out::println);
+
+		System.out.println("---sorting based on key---");
+		hm.entrySet().stream().sorted(Entry.comparingByKey()).forEach(System.out::println);
 	}
 }

@@ -28,15 +28,14 @@ public class LongestPolindrome {
 	}
 
 	private static boolean checkPolindrome(String s) {
+		int start = 0 ;
+		int end = s.length()-1;
 
-		String rev = "";
-		for(int i=s.length()-1;i>=0;i--) {
-			rev+=s.charAt(i);
+		while(start<end) {
+			if(s.charAt(start++) !=s.charAt(end--)) {
+				return false;
+			}
 		}
-		if(rev.equals(s)) {
-			return true;
-		}
-		
-		return false;
+		return true;
 	}
 }
