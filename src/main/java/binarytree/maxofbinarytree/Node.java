@@ -15,9 +15,8 @@ class Solution {
         if(root==null) return 0;
 
         int maxBetnLeftRight = Math.max(max(root.left), max(root.right));
-        int max = Math.max(root.data, maxBetnLeftRight);
 
-        return max;
+        return Math.max(root.data, maxBetnLeftRight);
     }
 
     public static void main(String[] args) {

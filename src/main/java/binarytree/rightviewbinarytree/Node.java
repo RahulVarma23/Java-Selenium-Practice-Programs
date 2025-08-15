@@ -34,9 +34,6 @@ class Solution {
         list.forEach(curr -> System.out.print(curr.data+" "));
     }
 
-
-
-
     public static void main(String[] args) {
         Node root = new Node(5);
         root.left=new Node(1);

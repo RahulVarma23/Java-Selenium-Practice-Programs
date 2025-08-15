@@ -37,7 +37,6 @@ class Solution {
 
             map.put(hd, node.data);
 
-
             if(node.left !=null) {
                 q.add(new Pair(hd-1, node.left));
             }
@@ -64,5 +63,4 @@ class Solution {
 
         System.out.println(bottomView(root));
     }
-
 }

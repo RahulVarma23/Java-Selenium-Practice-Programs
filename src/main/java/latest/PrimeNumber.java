@@ -16,5 +16,4 @@ public class PrimeNumber {
 		}
 		return flag;
 	}
-
 }

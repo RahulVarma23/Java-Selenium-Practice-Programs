@@ -5,8 +5,7 @@ import java.util.List;
 
 public class Node {
     int data;
-
-    Node left, right =null;
+    Node left, right = null;
 
     Node(int data) {
         this.data = data;

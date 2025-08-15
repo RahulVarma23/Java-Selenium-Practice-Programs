@@ -1,7 +1,5 @@
 package binarytree.topviewbinarytree;
 
-import org.openqa.selenium.devtools.v114.dom.model.Quad;
-
 import java.util.*;
 
 public class Node {

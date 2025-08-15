@@ -1,6 +1,5 @@
-package binarytree.printnodes;
+package binarytree.traversals;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Node {
@@ -38,8 +37,6 @@ class Solution {
         System.out.println("-----postorder traversal----");
         postOrder(root);
     }
-
-
 
     static void inOrder(Node root) {
         if(root==null) return;

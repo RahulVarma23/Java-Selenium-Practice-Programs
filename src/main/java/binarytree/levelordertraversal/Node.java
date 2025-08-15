@@ -4,15 +4,14 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Node {
-
     int data;
     Node left, right =null;
 
     Node (int data) {
         this.data=data;
     }
-
 }
+
 class Solution {
 
     static void levelOrderTraversal(Node root) {

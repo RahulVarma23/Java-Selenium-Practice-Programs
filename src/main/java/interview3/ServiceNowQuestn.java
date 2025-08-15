@@ -5,7 +5,6 @@ import java.util.stream.Collectors;
 
 public class ServiceNowQuestn {
 
-
     public static void addIntegerOfArray(int[] arr){
 //        StringBuilder num = new StringBuilder();
 //
@@ -19,7 +18,6 @@ public class ServiceNowQuestn {
         int number=Integer.parseInt(sum)+arr[0];
         int[] c = Integer.toString(number).chars().map(Character::getNumericValue).toArray();
         System.out.println( "Output : "+Arrays.toString(c));
-
     }
 
     public static void main(String[] args) {
