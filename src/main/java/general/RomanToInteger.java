@@ -29,6 +29,5 @@ public class RomanToInteger {
         }
 
         System.out.println(result);
-
     }
 }
