@@ -18,7 +18,7 @@ public class BrokenLinks {
 
 
 	@Test
-	public void findBrokenLinks() throws MalformedURLException {
+	public void findBrokenLinks() throws MalformedURLException, InterruptedException {
 		//WebDriver driver = getWebDriver();
 
 
@@ -27,6 +27,8 @@ public class BrokenLinks {
 		WebDriver driver = new ChromeDriver(browserOptions);
 		driver.manage().window().maximize();
 		driver.get("https://www.amazon.com");
+
+        driver.findElement(By.xpath("//button[text()='Continue shopping']")).click();
 		List<WebElement> linklist = driver.findElements(By.tagName("a"));
 
 		System.out.println("No of links: "+linklist.size());
@@ -38,7 +40,7 @@ public class BrokenLinks {
 //			checkBrokenLink(url);
 //		}
 
-		List <String > list = linklist.stream().map(ele->ele.getAttribute("href")).collect(Collectors.toList());
+		List <String > list = linklist.parallelStream().map(ele->ele.getAttribute("href")).collect(Collectors.toList());
 		list.parallelStream().forEach(BrokenLinks::checkBrokenLink);
 		driver.quit();
 	}
@@ -55,8 +57,7 @@ public class BrokenLinks {
 		ltOptions.put("w3c", true);
 		browserOptions.setCapability("LT:Options", ltOptions);
 
-		WebDriver driver = new RemoteWebDriver(new URL("https://hub.lambdatest.com/wd/hub"), browserOptions);
-		return driver;
+        return new RemoteWebDriver(new URL("https://hub.lambdatest.com/wd/hub"), browserOptions);
 	}
 
 	public static void checkBrokenLink(String linkUrl){
@@ -71,7 +72,7 @@ public class BrokenLinks {
 					System.out.println(linkUrl+"-->"+"Ok");
 				}	
 		} catch (Exception e) {
+            e.printStackTrace();
 		}
 	}
-
 }

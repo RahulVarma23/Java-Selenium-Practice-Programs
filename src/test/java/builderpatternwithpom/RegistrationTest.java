@@ -35,6 +35,6 @@ public class RegistrationTest {
 
     @AfterTest
     public void tearDown() {
-       // driver.quit();
+       driver.quit();
     }
 }
