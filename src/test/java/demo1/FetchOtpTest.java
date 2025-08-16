@@ -35,7 +35,6 @@ public class FetchOtpTest {
 
 
         MailosaurClient mailosaur = new MailosaurClient(apiKey);
-
         MessageSearchParams params = new MessageSearchParams();
         params.withServer(serverId);
 

@@ -1,4 +1,5 @@
 package SeleniumPracticeWithStreams;
+
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -16,12 +17,9 @@ import org.testng.annotations.Test;
 
 public class BrokenLinks {
 
-
 	@Test
 	public void findBrokenLinks() throws MalformedURLException, InterruptedException {
 		//WebDriver driver = getWebDriver();
-
-
 		ChromeOptions browserOptions = new ChromeOptions();
 		browserOptions.addArguments("--headless");
 		WebDriver driver = new ChromeDriver(browserOptions);
@@ -32,8 +30,6 @@ public class BrokenLinks {
 		List<WebElement> linklist = driver.findElements(By.tagName("a"));
 
 		System.out.println("No of links: "+linklist.size());
-
-
 
 //		for (WebElement e : linklist) {
 //			String url = e.getAttribute("href");

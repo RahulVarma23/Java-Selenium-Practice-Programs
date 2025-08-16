@@ -25,7 +25,6 @@ public class RegistrationPage {
         driver.findElement(telephone).sendKeys(registration.telephone);
         driver.findElement(password).sendKeys(registration.password);
         driver.findElement(confirmPassword).sendKeys(registration.confirmPassword);
-
     }
 
 
