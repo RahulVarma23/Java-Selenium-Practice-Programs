@@ -5,7 +5,7 @@ import org.apache.commons.lang3.StringUtils;
 public class LongestPalindromicSubstring {
 
 	public static void main(String[] args) {
-		System.out.println(findLongestPalindrome("babad"));
+		System.out.println(findLongestPolindromicSubString("babad"));
 	}
 	
 	static String findLongestPalindrome(String s) {
@@ -59,4 +59,37 @@ public class LongestPalindromicSubstring {
 		}
 		return true;
 	}
+
+    private static int findLongestPolindromicSubString(String s) {
+        if(s.length()<=1){
+            return s.length();
+        }
+
+        String maxString = s.substring(0,1);
+
+        for(int i=0;i<s.length();i++) {
+            String odd = expandByCenter(s, i, i);
+            String even = expandByCenter(s, i , i+1);
+
+            if(odd.length()>maxString.length()) {
+                maxString = odd;
+            }
+
+            if(even.length()>maxString.length()) {
+                maxString = even;
+            }
+        }
+
+        return maxString.length();
+    }
+
+    private static String expandByCenter(String s, int left, int right) {
+
+        while(left>=0 && right<s.length() && s.charAt(left) == s.charAt(right)) {
+            left--;
+            right++;
+        }
+
+        return s.substring(left+1, right);
+    }
 }

@@ -1,5 +1,6 @@
 package binarytree.heightoftree;
- class Node {
+
+class Node {
     int data;
     Node left , right =null;
 
@@ -7,6 +8,7 @@ package binarytree.heightoftree;
         this.data=data;
     }
 }
+
 class Solution {
 
     static int height(Node root) {
