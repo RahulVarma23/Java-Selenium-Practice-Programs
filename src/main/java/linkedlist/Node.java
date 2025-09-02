@@ -93,7 +93,6 @@ class Palindrome {
         return original.equals(reversed);
     }
 
-
     public static void main(String[] args) {
         Node head = new Node(1);
         head.next = new Node(2);
